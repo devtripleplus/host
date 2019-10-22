@@ -1,0 +1,1 @@
+supervisorctl -c /home/ssingh/src/supervisor-upm.conf stop upm-api && sudo rm -rf /home/ssingh/src/UPM-API && mkdir -p /home/ssingh/src/UPM-API && chmod -R 777 /home/ssingh/src/UPM-API

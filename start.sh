@@ -1,0 +1,1 @@
+supervisorctl -c /home/ssingh/src/supervisor-upm.conf start upm-api

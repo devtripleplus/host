@@ -1,0 +1,32 @@
+<!-- views/pages/index.ejs -->
+<% extend('../layout') %>
+
+<div class="jumbotron">
+    <h1>This is great</h1>
+    <p>Welcome to UPM</p>
+</div>
+
+<h2>List of Bookmarks</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">UserId</th>
+            <th scope="col">Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% bookmarks.forEach( function(bookmark){ %>
+        <tr>
+            <th scope="row"><%= bookmark._id %></th>
+            <td><%= bookmark.name %></td>
+            <td><%= bookmark.user_id %></td>
+            <td><%= bookmark.url_path %></td>
+        </tr>
+
+        <% }) %>
+
+    </tbody>
+</table>

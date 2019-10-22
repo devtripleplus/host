@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ssingh/src/UPM-API
+hooks:
+  BeforeInstall:
+  - location: /stop.sh
+    timeout: 300
+    runas: ssingh
+  #- location: npm_install.sh
+    #timeout: 300
+    #runas: ssingh
+  AfterInstall:
+  - location: /npm_install.sh
+    timeout: 300
+    runas: ssingh
+  - location: /start.sh
+    timeout: 300
+    runas: ssingh

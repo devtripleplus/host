@@ -1,0 +1,1 @@
+cd home/ssingh/src/UPM-API/ && sudo npm install --prefix /home/ssingh/src/UPM-API/
